@@ -1,4 +1,5 @@
 #include "pico/stdlib.h"
+#include <stdio.h>
 
 #define LED_VERDE 11
 #define LED_AZUL  12
@@ -10,7 +11,7 @@ void desligar_todos_gpio() {
     gpio_put(LED_VERDE, 0);
     gpio_put(LED_AZUL, 0);
     gpio_put(LED_VERMELHO, 0);
-    gpio_put(BUZZER_A 0);
+    gpio_put(BUZZER_A, 0);
     gpio_put(BUZZER_B, 0);
 }
 
