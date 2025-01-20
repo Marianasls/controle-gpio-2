@@ -1,17 +1,14 @@
-# controle-gpio-2
-
 # Controle de GPIOs com a Ferramenta BitDogLab
 
 Este projeto consiste no controle de pinos GPIO do microcontrolador RP2040 integrado na ferramenta educacional *BitDogLab* (versão 6.3), utilizando a interface serial UART e programação em linguagem C com o *Pico SDK*. Foram desenvolvidas rotinas para o acionamento de LEDs RGB e buzzer, conforme especificações da tarefa.
 
 ## Índice
-- [Descrição do Projeto](#descrição-do-projeto)
-- [Requisitos](#requisitos)
-- [Configuração do Ambiente](#configuração-do-ambiente)
-- [Funcionalidades](#funcionalidades)
-- [Como Utilizar](#como-utilizar)
-- [Estrutura do Repositório](#estrutura-do-repositório)
-- [Contribuição](#contribuição)
+- [Controle de GPIOs com a Ferramenta BitDogLab](#controle-de-gpios-com-a-ferramenta-bitdoglab)
+  - [Índice](#índice)
+  - [Descrição do Projeto](#descrição-do-projeto)
+  - [Requisitos](#requisitos)
+  - [Configuração do Ambiente](#configuração-do-ambiente)
+  - [Estrutura do Repositório](#estrutura-do-repositório)
 
 ---
 
@@ -41,9 +38,8 @@ Para a execução deste projeto, são necessários:
 2. Baixe e configure o simulador *Wokwi*.
 3. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
-
+   git clone https://github.com/Marianasls/controle-gpio-2.git
+   cd controle-gpio-2
 ---
 
 ## Funcionalidades
@@ -65,8 +61,9 @@ As principais rotinas implementadas no projeto são:
 1. Conecte a ferramenta *BitDogLab* ao computador via cabo micro-USB.
 2. Compile o código utilizando o *VS Code*:
    ```bash
-   cmake ..
+   cmake .
    make
+   ```
 3. *Envie os binários para o microcontrolador.*
 4. *Estabeleça a comunicação UART usando o PuTTY:*
    - Configure a porta serial correspondente;
@@ -84,6 +81,7 @@ As principais rotinas implementadas no projeto são:
 
 ## Estrutura do Repositório
 
+```
 controle-gpio-2/
 ├── .vscode/               # Configurações do Visual Studio Code
 ├── .gitignore             # Arquivo de configuração para exclusões no Git
@@ -91,17 +89,4 @@ controle-gpio-2/
 ├── README.md              # Documentação principal do projeto
 ├── controle-gpio-2.c      # Código-fonte principal do projeto
 ├── pico_sdk_import.cmake  # Configuração para o uso do SDK do Pico
-
----
-
-## Contribuição
-
-Para contribuir:
-
-1. Faça um fork do repositório.
-2. Crie um branch com a sua funcionalidade:
-   ```bash
-   git checkout -b minha-funcionalidade
-3. *Realize commits descritivos e frequentes.*
-
-4. *Abra um pull request.*
+```
