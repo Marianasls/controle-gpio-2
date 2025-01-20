@@ -12,7 +12,6 @@ Este projeto consiste no controle de pinos GPIO do microcontrolador RP2040 integ
 - [Como Utilizar](#como-utilizar)
 - [Estrutura do Repositório](#estrutura-do-repositório)
 - [Contribuição](#contribuição)
-- [Autores](#autores)
 
 ---
 
