@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include <stdio.h>
 
 // Definições dos pinos
 #define LED_VERDE 11
